@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    
+}
+
+.popup-container{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+  
+}
+.popup-container.active{
+    display: flex;
+}
+
+.popup{
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    padding: 2rem;
+    position: absolute;
+    
+}
+.popup button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+button{
+    background-color: rebeccapurple;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
